@@ -1766,3 +1766,126 @@ h5 {
         height: 100%;
     }
 }
+
+/* Стили только для формы в модалке */
+.popup__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+    padding: 8px 16px 0;
+    height: 80vh;
+    overflow-y: auto;
+    filter: invert(1);
+}
+
+.popup__form .input__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
+    color: rgb(32, 33, 36);
+}
+
+.popup__form .input__wrapper .input__title {
+    color: rgb(32, 33, 36);
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.popup__form .input__wrapper .input__title::after {
+    content: "*";
+    color: rgb(217, 48, 37);
+    margin-left: 4px;
+}
+
+.popup__form .input__wrapper input,
+.popup__form .input__wrapper textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    transition: border-color 0.3s;
+    border-radius: unset;
+    color: rgb(32, 33, 36);
+}
+
+.popup__form .input__wrapper input:focus,
+.popup__form .input__wrapper textarea:focus {
+    border-bottom: 1px solid rgb(140, 124, 0);
+}
+
+.popup__form .button__cnt {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    filter: invert(1);
+}
+
+.popup__form .button__cnt button {
+    padding: 10px 20px;
+    background-color: #0af;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup__form .button__cnt button:hover {
+    background-color: #0077cc;
+}
+
+.popup__form .radio__group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.popup__form .radio__label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    height: 20px;
+}
+
+.popup__form .radio__label input[type="radio"] {
+    display: none;
+}
+
+.popup__form .radio__label .radio__custom {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5f6368;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.popup__form .radio__label input[type="radio"]:checked + .radio__custom {
+    background-color: transparent;
+    border-color: rgb(140, 124, 0);;
+}
+
+.popup__form .radio__label input[type="radio"]:checked + .radio__custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: rgb(140, 124, 0);;
+    border-radius: 50%;
+}

@@ -178,20 +178,73 @@
 			</div>
 		</div>
 
-		<div class="popup">
-				<div class="popup__background"></div>
-				<div class="form-cnt popup__form">
-					<div class="popup__text__flex">
-						<h3 class="popup-header form__header">Оставить заявку</h3>
-						<div class="x-cnt"><img src="img/ph_x.svg" alt="" class="x"></div>
-					</div>
-	
-					<div class="iframe-container">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMpfZQVEXRlEh0_hVJCqaGFh4-Y1XKf9uyhZk0tuh3TJqeZQ/viewform?embedded=true" width="640" height="1232" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-					</div>
-				</div>
-	
-		</div>
+        <div class="popup">
+            <div class="popup__background"></div>
+            <div class="form-cnt popup__form">
+                <div class="popup__text__flex">
+                    <h3 class="popup-header form__header">Оставить заявку</h3>
+                    <div class="x-cnt"><img src="img/ph_x.svg" alt="" class="x"></div>
+                </div>
+
+                <!--                <div class="iframe-container">-->
+                <!--                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMpfZQVEXRlEh0_hVJCqaGFh4-Y1XKf9uyhZk0tuh3TJqeZQ/viewform?embedded=true" width="640" height="1232" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
+                <!--                </div>-->
+
+                <form id="requestForm">
+                    <input type="hidden" name="access_key" value="2c40a44f-3154-43e1-835c-4a73678edf64">
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Выберите направление</div>
+                        <div class="radio__group">
+                            <label class="radio__label">
+                                <input type="radio" name="direction" value="Криптоиндустрия" required>
+                                <span class="radio__custom"></span>
+                                Криптоиндустрия
+                            </label>
+                            <label class="radio__label">
+                                <input type="radio" name="direction" value="Культура и философия (доступен для предзаказа)" checked>
+                                <span class="radio__custom"></span>
+                                Культура и философия (доступен для предзаказа)
+                            </label>
+                            <label class="radio__label">
+                                <input type="radio" name="direction" value="IT — технологии">
+                                <span class="radio__custom"></span>
+                                IT — технологии
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Имя</div>
+                        <input type="text" name="name" placeholder="Введите имя" required>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Фамилия</div>
+                        <input type="text" name="surname" placeholder="Введите фамилию" required>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Эл. Почта</div>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Номер Телефона</div>
+                        <input type="tel" name="phone" placeholder="+7..." required>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <div class="input__title">Телеграм</div>
+                        <input type="text" name="telegram" placeholder="@имя пользователя" required>
+                    </div>
+
+                    <div class="button__cnt">
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 		<div class="burger">
 			<div class="burger__background">
