@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <title>Future Point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <nav>
+        <div class="nav__cnt">
+            <a href="index.html" class="logo-cnt"><img src="img/Logo.svg" alt="" class="logo"></a>
+            <ul class="nav__menu">
+                <li class="links__cnt"><a href="index.html" class="link">Главная</a></li>
+                <li class="links__cnt">
+                    <a href="robot.html" class="link">Продукты</a>
+                    <ul class="nav-dropdown">
+                        <li>
+                          <a href="robot.html" class="link">Роботы</a>
+                        </li>
+                        <li>
+                          <a href="trading.html" class="link">Торговые индексы</a>
+                        </li>
+                        <li>
+                          <a href="trading.html#arbitrage-index" class="link">Арбитражные индексы</a>
+                        </li>
+                      </ul>
+            
+                </li>
+                <li class="links__cnt"><a href="academy.html" class="link">Академия</a></li>
+                <li class="links__cnt"><button class="nav__button open-form">Оставьте Заявку</button></li>
+            </ul>
+            <button class="nav__burger"><img src="img/burger.svg" alt="" class="burger__icn"></button>
+        </div>
+    </nav>
+<div class="cnt">
+    <div class="academy-hero">
+        <div class="academy-hero__wrapper">
+            <div class="academy-hero__left">
+                <div class="academy-hero__texts">
+                    <h1>Откройте будущее вместе с Future Point Academy!</h1>
+                    <p class="academy-hero__description">Future Point Academy – это уникальная образовательная платформа, объединяющая знания культуры с современными технологиями для профессионального роста.</p>
+                </div>
+
+                <div class="left__card">
+                    <div class="left__card__card">
+                        <div class="left__card__text">Получите необходимые знания и навыки для успешной карьеры в современном цифровом мире.</div>
+                        <button class="left__button open-form">Записаться</button>
+                    </div>
+                    <img src="img/9e32bbfc94f2f8e94a773acdedf2f7b2.webp" alt="" class="left__card__img">
+                </div>
+            </div>
+            <img src="img/b830c866230192d0898d14ca370d2fdc.jpeg" alt="" class="right__img">
+        </div>
+    </div>
+
+    <div class="advantages">
+        <h3 class="advantages__heading">Преимущества академии</h3>
+        <div class="advantages__card">
+            <h4 class="advantages__card__heading">Профессиональные преподаватели</h4>
+            <p class="advantages__card__description">Наши курсы ведут опытные и высококвалифицированные преподаватели, которые обладают глубокими знаниями в своей области. Они помогут вам освоить материал на профессиональном уровне.</p>
+            <img src="img/graduation.webp" alt="light bulb" class="advantages__img graduation">
+        </div>
+        <div class="advantages__card">
+            <h4 class="advantages__card__heading">Индивидуальный подход</h4>
+            <p class="advantages__card__description">Мы ценим уникальные потребности каждого студента. Наш индивидуальный подход позволяет адаптировать учебный процесс под ваши цели и интересы.</p>
+            <img src="img/graph.webp" alt="servers" class="advantages__img graph">
+        </div>
+        <div class="advantages__card">
+            <h4 class="advantages__card__heading">Широкий выбор курсов</h4>
+            <p class="advantages__card__description">Мы предлагаем курсы, охватывающие различные области: от информационных технологий до криптоиндустрии и философии. Вы сможете выбрать тот, который соответствует вашим интересам и амбициям.</p>
+            <img src="img/coins.webp" alt="handshake" class="advantages__img">
+        </div>
+    </div>
+    <div class="courses">
+        <h3 class="courses__heading">Что мы предлагаем</h3>
+        <p class="courses__paragraph">Широкий выбор курсов для разных уровней подготовки.</p>
+        <div class="courses__cards">
+            <div class="courses__card">
+                <div class="courses__card__type">В разработке</div>
+                <div class="courses__card__texts">
+                    <div class="field__img-cnt"><img src="img/book.svg" alt="" class="field__img"></div>
+                    <h4 class="courses__card__title">Культура и философия</h4>
+                    <p class="courses__card__paragraph">Этот курс погружает вас в мир мысли и символики великих философов. Изучайте историю философии, анализируйте символы и их значения. Размышляйте о вечных вопросах и расширяйте свой ум.</p>
+                </div>
+                <button class="robot__button disabled small open-form">Оформить предзаказ</button>
+            </div>
+            <div class="courses__card crypto__card">
+                <div class="courses__card__type">Самый популярный</div>
+                <div class="courses__card__texts">
+                    <div class="field__img-cnt"><img src="img/blockchain.svg" alt="" class="field__img"></div>
+                    <h4 class="courses__card__title">Криптоиндустрия</h4>
+                    <p class="courses__card__paragraph">В этом курсе вы узнаете о технологии блокчейн, криптовалютах и безопасных транзакциях. Изучайте основы децентрализации, умные контракты и роль криптовалют в современной экономике.</p>
+                </div>
+                <button class="robot__button small open-form">Присоединяйтесь к нам</button>
+            </div>
+            <div class="courses__card tech__card">
+                <div class="courses__card__type">В разработке</div>
+                <div class="courses__card__texts">
+                    <div class="field__img-cnt"><img src="img/tech.svg" alt="" class="field__img"></div>
+                    <h4 class="courses__card__title">IT-технологии</h4>
+                    <p class="courses__card__paragraph">Этот курс предоставит вам навыки, необходимые для разработки современных пользовательских интерфейсов. Изучайте принципы дизайна, взаимодействие пользователя и создание интуитивных интерфейсов.</p>
+                </div>
+                <button class="robot__button disabled small open-form">Оформить предзаказ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slider main container -->
+<div class="swiper">
+    <h3 class="courses__heading">Этапы Обучения</h3>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="robot__card">
+            <div class="robot__card__texts">
+                <div class="robot__card__header">Обучение</div>
+                <p class="robot__card__paragraph">Погрузитесь в мир новых знаний. Начните свое обучение с основ. Наши опытные эксперты помогут вам освоить все необходимые навыки.</p>
+            </div>
+            <img src="img/hat.webp" alt="" class="robot__card__img">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="robot__card">
+            <div class="robot__card__texts">
+                <div class="robot__card__header">Практика</div>
+                <p class="robot__card__paragraph">Отточите свои навыки. Развивайте практические умения под руководством опытных наставников.</p>
+            </div>
+            <img src="img/barbell.webp" alt="" class="robot__card__img">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="robot__card">
+            <div class="robot__card__texts">
+                <div class="robot__card__header">Поддержка</div>
+                <p class="robot__card__paragraph">Станьте частью нашего сообщества. Общайтесь с другими участниками курса, делитесь опытом и получайте обратную связь.</p>
+            </div>
+            <img src="img/question.webp" alt="" class="robot__card__img question">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="robot__card">
+            <div class="robot__card__texts">
+                <div class="robot__card__header">Успех</div>
+                <p class="robot__card__paragraph">Участвуйте в хакатонах, проявляйте креативные решения развивая свой потенциал</p>
+            </div>
+            <img src="img/target.webp" alt="" class="robot__card__img question target">
+        </div>
+      </div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  
+
+<div class="footer">
+    <h3 class="footer__heading">Начните свое обучение уже сегодня!</h3>
+    <p class="footer__paragraph">Присоединяйтесь к сообществу Future Point Academy и двигайтесь к успеху.</p>
+    <button class="footer__button open-form">Присоединиться к платформе</button>
+    <div class="footer__flex">
+        <img src="img/Logo.svg" alt="" class="footer__logo">
+        <ul class="footer__links">
+            <li class="footer__link">ООО "ТОЧКА БУДУЩЕГО"</li>
+            <li class="footer__link">353994, Краснодарский край</li>
+            <li class="footer__link">г. Новороссийск, ул. Каштановая, д. 11</li>
+            <li class="footer__link">2315237906 ИНН, 1242300066084 ОГРН </li>
+            <li class="footer__link">2315237906 ИНН, 1242300066084 ОГРН </li>
+            <li class="footer__link"><a href="#"><img src="img/mail.svg" alt="" class="mail-icon"> 7futurepoint@gmail.com</a></li>
+        </ul>
+        <ul class="footer__links">
+            <li class="footer__link"><a href="#">Политика конфиденциальности</a></li>
+            <li class="footer__link"><a href="#">Согласие на обработку персональных данных</a></li>
+            <li class="footer__link"><a href="#">Правила пользования сайтом</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="popup">
+    <div class="popup__background"></div>
+    <div class="form-cnt popup__form">
+        <div class="popup__text__flex">
+            <h3 class="popup-header form__header">Оставить заявку</h3>
+            <div class="x-cnt"><img src="img/ph_x.svg" alt="" class="x"></div>
+        </div>
+
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMpfZQVEXRlEh0_hVJCqaGFh4-Y1XKf9uyhZk0tuh3TJqeZQ/viewform?embedded=true" width="640" height="1232" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+                    <!-- <form action="" method="POST">
+            <input type="hidden" name="access_key" value="5a8aa95a-dd8c-40ae-a42f-bdccc5b85ac2">
+            <div class="input__title">Имя*</div>
+            <input type="text" name="name" id="" placeholder="Name" required>
+            <div class="input__title">Фамилия*</div>
+            <input type="text" name="surname" id="" placeholder="Name" required>
+            <div class="input__title">Эл. Почта*</div>
+            <input type="email" name="email" id="email" placeholder="name@example.com" required>
+            <div class="input__title">Номер Телефона*</div>
+            <input type="tel" name="email" id="email" placeholder="+7..." required>
+            <div class="button__cnt"><button type="submit">Оставить Заявку</button></div>
+        </form> -->
+
+    </div>
+
+</div>
+
+<div class="burger">
+    <div class="burger__background">
+        <div class="burger__cnt">
+            <ul class="nav__menu">
+                <li class="links__cnt"><a href="index.html" class="link">Главная</a></li>
+                <li class="links__cnt"><a href="robot.html" class="link">Роботы</a></li>
+                <div class="link">Торговые индексы (скоро)</div>
+                <li class="links__cnt"><a href="academy.html" class="link">Академия</a></li>
+                <li class="links__cnt"><button class="nav__button open-form">Оставьте Заявку</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 40,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2500, // Delay between transitions in milliseconds
+            disableOnInteraction: false, // Enable autoplay even after the user interacts with the slider
+            pauseOnMouseEnter: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10, // Adjust spacing for small screens
+            },
+            720: {
+                slidesPerView: 2,
+                spaceBetween: 20, // Adjust spacing if needed
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40, // Adjust for larger screens
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>
