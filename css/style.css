@@ -1839,14 +1839,14 @@ h5 {
     background-color: #0077cc;
 }
 
-.popup__form .radio__group {
+.popup__form .checkbox__group {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-top: 8px;
 }
 
-.popup__form .radio__label {
+.popup__form .checkbox__label {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -1856,11 +1856,11 @@ h5 {
     height: 20px;
 }
 
-.popup__form .radio__label input[type="radio"] {
+.popup__form .checkbox__label input[type="checkbox"] {
     display: none;
 }
 
-.popup__form .radio__label .radio__custom {
+.popup__form .checkbox__label .checkbox__custom {
     position: absolute;
     left: 0;
     top: 50%;
@@ -1873,12 +1873,12 @@ h5 {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.popup__form .radio__label input[type="radio"]:checked + .radio__custom {
+.popup__form .checkbox__label input[type="checkbox"]:checked + .checkbox__custom {
     background-color: transparent;
     border-color: rgb(140, 124, 0);;
 }
 
-.popup__form .radio__label input[type="radio"]:checked + .radio__custom::after {
+.popup__form .checkbox__label input[type="checkbox"]:checked + .checkbox__custom::after {
     content: '';
     position: absolute;
     top: 50%;
